@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Calculadora.CalculadoraTrigonometrica">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Calculadora trigonometrica"
+                   TextColor="#24345F"
+                   HorizontalOptions="CenterAndExpand" 
+                   Margin="0, 15"
+                    FontSize="18"/>
+            <Image Source="FuncionTrigonometrica.png"
+                   HorizontalOptions="Center"
+                   Margin="0, 15"/>
+
+            <Entry x:Name="tbTrigonometrica"
+                   Placeholder="Ingrese el valor"
+                   Text=""
+                   Keyboard="Numeric"
+                   HorizontalOptions="Center"
+                   TextColor="#24345F" 
+                   WidthRequest="300"
+                   HeightRequest="60"
+                   Margin="0, 15"/>
+
+            <Picker Title="Seleccione una operacion"
+                    x:Name="cbTrigonometricas"
+                    HorizontalOptions="Center"
+                    TextColor="#24345F" 
+                    WidthRequest="280"
+                    HeightRequest="60" 
+                />
+
+            <Label x:Name="lblResultado"
+                    Text=""
+                    TextColor="#24345F"
+                    Margin="0, 15"
+                    HorizontalOptions="Center"
+                    FontSize="20"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Calculadora.ConversorFahrenheint">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Convertir grados Fahrenheit a Centigrados"
+                   TextColor="#24345F"
+                   HorizontalOptions="CenterAndExpand" 
+                   Margin="0, 15"
+                    FontSize="18"/>
+            <Image Source="ImagenTermometro.png"
+                   HorizontalOptions="Center"
+                   Margin="0, 15"/>
+
+            <Entry x:Name="tbGrados"
+                   Placeholder="Ingrese los grados Fahrenheit"
+                   Text=""
+                   Keyboard="Numeric"
+                   HorizontalOptions="Center"
+                   TextColor="#24345F" 
+                   WidthRequest="300"
+                   HeightRequest="60"
+                   Margin="0, 15"/>
+
+            <Button x:Name="convertirGrados"
+                    Text="Convertir"
+                    BackgroundColor="Transparent"
+                    BorderWidth="3" 
+                    BorderRadius="30" 
+                    BorderColor="#24345F"
+                    Margin="0, 15"
+                    HeightRequest="50"
+                    WidthRequest="220"
+                    HorizontalOptions="Center"
+                    TextColor="#24345F"
+                    FontSize="17"
+                    Clicked="convertirGrados_Clicked"/>
+
+            <Label x:Name="lblResultado"
+                    Text=""
+                    TextColor="#24345F"
+                    Margin="0, 15"
+                    HorizontalOptions="Center"
+                    FontSize="20"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
