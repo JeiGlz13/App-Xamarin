@@ -16,6 +16,12 @@
                    HorizontalOptions="Center"
                    Margin="0, 15"/>
 
+            <Label Text="Ingrese un valor"
+                   TextColor="#24345F"
+                   HorizontalOptions="CenterAndExpand" 
+                   Margin="0, 15"
+                    FontSize="18"/>
+
             <Entry x:Name="tbTrigonometrica"
                    Placeholder="Ingrese el valor"
                    Text=""
@@ -32,12 +38,18 @@
                     TextColor="#24345F" 
                     WidthRequest="280"
                     HeightRequest="60" 
-                />
+                SelectedIndexChanged="cbTrigonometricas_SelectedIndexChanged"/>
 
             <Label x:Name="lblResultado"
                     Text=""
                     TextColor="#24345F"
                     Margin="0, 15"
+                    HorizontalOptions="Center"
+                    FontSize="20"/>
+
+            <Label x:Name="lblResultadoRadian"
+                    Text=""
+                    TextColor="#24345F"
                     HorizontalOptions="Center"
                     FontSize="20"/>
         </StackLayout>
