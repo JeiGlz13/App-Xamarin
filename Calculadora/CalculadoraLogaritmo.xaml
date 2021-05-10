@@ -4,10 +4,14 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Calculadora.CalculadoraLogaritmo">
+             x:Class="Calculadora.CalculadoraLogaritmo"
+             >
+    
+    
     <ContentPage.Content>
+        
         <StackLayout>
-
+            
             
             <Label Text="Calculadora logaritmos"
                    TextColor="#24345F"

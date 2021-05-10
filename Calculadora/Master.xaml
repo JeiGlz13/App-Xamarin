@@ -3,17 +3,54 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              mc:Ignorable="d"
              x:Class="Calculadora.Master"
               Title = "Master">
            
     <ContentPage.Content>
         <StackLayout>
-            <Button Text="Conversor Fahrenheit" x:Name="Grados" BackgroundColor="#f2f2f2" Image="Termometro.png" Clicked="Grados_Clicked"/>
-            <Button Text="Calcular Hipotenusa" x:Name="Hipotenusa" BackgroundColor="#f2f2f2" Image="Hipotenusa.png" Clicked="Hipotenusa_Clicked"/>
 
+            <!--
+            <xct:Expander Margin="10">
+
+                <xct:Expander.Header>
+                    <Label Text="Tarea 1" 
+                           TextColor="#24345F"
+                           HorizontalOptions="CenterAndExpand" 
+                           Margin="0, 15"
+                           FontSize="20"/>
+                </xct:Expander.Header>
+                <xct:Expander.ContentTemplate>
+                    <DataTemplate>
+                        <ContentView>
+                            <Grid  >
+                                <Button   Text="Conversor Fahrenheit" x:Name="Grados" BackgroundColor="#f2f2f2" Image="Termometro.png" Clicked="Grados_Clicked"/>
+                                <Button   Text="Calcular Hipotenusa" x:Name="Hipotenusa" BackgroundColor="#f2f2f2" Image="Hipotenusa.png" Clicked="Hipotenusa_Clicked"/>
+                            </Grid>
+                        </ContentView>
+                    </DataTemplate>
+
+                </xct:Expander.ContentTemplate>
+            </xct:Expander>
+            -->
+
+            <Label Text="Tarea 1" 
+                           TextColor="#24345F"
+                           HorizontalOptions="CenterAndExpand" 
+                           Margin="0, 15"
+                           FontSize="20"/>
+            <Button   Text="Conversor Fahrenheit" x:Name="Grados" BackgroundColor="#f2f2f2" Image="Termometro.png" Clicked="Grados_Clicked"/>
+            <Button   Text="Calcular Hipotenusa" x:Name="Hipotenusa" BackgroundColor="#f2f2f2" Image="Hipotenusa.png" Clicked="Hipotenusa_Clicked"/>
+            <Label Text="Tarea 2" 
+                           TextColor="#24345F"
+                           HorizontalOptions="CenterAndExpand" 
+                           Margin="0, 15"
+                           FontSize="20"/>
             <Button Text="Calculadora trigonometrica" x:Name="Trigonometrica" BackgroundColor="#f2f2f2" Image="coseno.png" Clicked="Trigonometrica_Clicked"/>
             <Button Text="Calculadora Logaritmo" x:Name="Factorial" BackgroundColor="#f2f2f2" Image="factorial.png" Clicked="Factorial_Clicked"/>
+
+           
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
